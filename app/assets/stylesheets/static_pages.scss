@@ -2,33 +2,49 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-h1 {
-	font-family: Helvetica, Arial, sans-serif;
-	text-align: center;
-	color: darkslategray;
-}
-
-h2 {
-	font-family: Courier new, Arial, sans-serif;
-	color: darkslategray;
-	text-align: center;
-}
-
-p {
-	font-family: Helvetica, Arial, sans-serif;
-	display: block;
-	font-size: large;
-	text-align: center;
-	color: black;
-}
-
-.navbar a {
-	color: white;
+body {
+	background-color: #F6F6F6;
 }
 
 img {
 	margin: 10em auto;
 }
+
+/* Nav */
+
+.navbar {
+	border-bottom: 10px solid #DE1B1B;
+	background-color: #2B2B2B;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #F6F6F6;
+    letter-spacing: 0.10em;
+
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: #E9E581;
+    text-decoration: none;
+}
+
+.navbar-brand {
+    display: inline-block;
+    padding: 20px 19px 20px;
+    letter-spacing: 0.10em;
+    text-decoration: none;
+}
+
+.navbar-brand a {
+    color: #F6F6F6;
+}
+
+.navbar-brand a:hover {
+    color: #E9E581;
+    text-decoration: none;
+}
+
+/* Footer */
 
 site-footer {
 	position: fixed;
@@ -50,12 +66,60 @@ site-footer {
 	padding-top: 15px;
 	width: 100%;
 	color: white;
-	background-color: black;
+	background-color: #2B2B2B;
+}
+
+/* Carousel */
+
+.carousel-inner {
+	background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-bottom: 0;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
+}
+
+.carousel-control:hover, .carousel-control:focus {
+ 	background-color: rgba(0,0,0,0);
+ 	color: #fff;
+ 	opacity: 100;
+ }
+
+.carousel-control.left .glyphicon {
+    left: 0;
+    margin-left: 0;
+}
+
+.carousel-control.right .glyphicon {
+    right: 0;
+    margin-right: 0;
+}
+
+.carousel-caption {
+    display: inline-block;
+    background-color: rgba(233, 229, 129, 0.8);
+    border-radius: 10px;
+    font-size: 45px;
+    letter-spacing: 0.10em;
+    color: #2B2B2B;
+}
+
+.carousel-indicators > li {
+    border: 5px;
+	background-color: #a9a9a4;
+}
+
+.carousel-indicators > .active {
+	background-color: #2B2B2B;
 }
 
 /* Products Page */
 
 .card {
+    margin-bottom: 10px;
+    background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	padding: 20px;
 	text-align: center;
@@ -68,6 +132,34 @@ site-footer {
 .card_footer {
 	font-size: 2em;
 }
+
+/* Typography */
+
+.navbar a {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+	font-family: 'Raleway', Helvetica, sans-serif;
+	text-align: center;	
+}
+
+h2, 
+h3, 
+h4 {
+	font-family: 'Lora', serif;
+	text-align: center;
+}
+
+p {
+	font-family: 'Lora', serif;
+	display: block;
+	font-size: large;
+	text-align: center;
+}
+
+
+
 
 
 
