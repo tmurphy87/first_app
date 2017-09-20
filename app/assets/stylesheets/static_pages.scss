@@ -133,6 +133,22 @@ site-footer {
 	font-size: 2em;
 }
 
+#img_card {
+    margin-bottom: 4em;
+    background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#product_card {
+	margin-top: 15em;
+	margin-left: 10em;
+	padding: 53px;
+	border-style: solid;
+	border-width: 4px;
+	width: 350px;
+	height: 300px;
+}
+
 /* Typography */
 
 .navbar a {

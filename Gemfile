@@ -55,5 +55,16 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 #Production environment group
 group :production do
   gem 'pg'
+  gem 'rails_12factor'
 end
+
+
+
+
+
+
+
+
+
+
 
