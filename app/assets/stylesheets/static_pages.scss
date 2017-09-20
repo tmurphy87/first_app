@@ -7,7 +7,7 @@ body {
 }
 
 img {
-	margin: 10em auto;
+	margin: 7em auto;
 }
 
 /* Nav */
@@ -121,16 +121,19 @@ site-footer {
 	width: 33%;
 	display: inline-block;
 }
+
 .card {
-    margin-bottom: 10px;
+    height: 600px;
+    width: 400px;
+    margin: 30px 15px 0;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	padding: 20px;
+	padding: 40px;
 	text-align: center;
 }
 
 .card_block {
-	margin-top: 15px;
+	padding: 30px;
 }
 
 .card_footer {
