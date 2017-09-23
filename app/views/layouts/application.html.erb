@@ -25,10 +25,11 @@
           <div class="projectName navbar-brand">
             <a href="#">First App</a>
           </div> <!-- /projectName -->
-          <%= form_tag(products_path, method: "get", class: "navbar-form navbar-right") do %>
           <div class="form-group">
-            <%= text_field_tag(:q, "", type: "text", class: "form-control", placeholder: "search") %>
-            <%= submit_tag("Search", class: "btn btn-default") %>
+            <%= form_with(url: products_path, method: "get", local: "true", class: "navbar-form navbar-right") do |form| %>
+              <%= form.label :q, "Search for:" %>
+              <%= form.text_field :q, id: "q", class: "form-control", value: params[:q] %>
+              <%= form. submit "Search", class: "btn btn-default" %>
             <% end %>
           </div>
         </div> <!-- /navbar header -->
