@@ -25,6 +25,12 @@
           <div class="projectName navbar-brand">
             <a href="#">First App</a>
           </div> <!-- /projectName -->
+          <%= form_tag(products_path, method: "get", class: "navbar-form navbar-right") do %>
+          <div class="form-group">
+            <%= text_field_tag(:q, "", type: "text", class: "form-control", placeholder: "search") %>
+            <%= submit_tag("Search", class: "btn btn-default") %>
+            <% end %>
+          </div>
         </div> <!-- /navbar header -->
         <div class="navbar-collapse collapse">
   	      <ul class="nav navbar-nav navbar-right">

@@ -1,9 +1,11 @@
-<div class="col-xs-12 col-sm-6 col-lg-4">
-  <div class="card">
-    <%= link_to image_tag(product.image_url, class: "img-responsive"), product %>
-    <div class="card_block">
-      <h3 class="card_title"><%= product.name %></h3>
-      <h4 class="card_footer"><strong><%= product.price %></strong></h4>
-    </div><!-- /card_block -->
-  </div><!-- /card -->
-</div><!-- /col -->
+<%= link_to product do %>
+  <div class="col-xs-12 col-sm-6 col-lg-4">
+    <div class="card">
+      <%= link_to image_tag(product.image_url, class: "img-responsive"), product %>
+      <div class="card_block">
+        <h3 class="card_title"><%= product.name %></h3>
+        <h4 class="card_footer"><%= number_with_precision(product.price, precision: 2) %></h4>
+      </div><!-- /card_block -->
+    </div><!-- /card -->
+  </div><!-- /col -->
+<% end %>

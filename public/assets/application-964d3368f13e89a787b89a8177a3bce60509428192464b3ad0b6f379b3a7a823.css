@@ -1,0 +1,215 @@
+/* line 5, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+body {
+  background-color: #F6F6F6;
+  margin: 75px;
+}
+
+/* line 10, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+img {
+  margin: 7em auto;
+}
+
+/* Nav */
+/* line 16, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+.navbar {
+  border-bottom: 10px solid #DE1B1B;
+  background-color: #2B2B2B;
+}
+
+/* line 21, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+.navbar-inverse .navbar-nav > li > a {
+  color: #F6F6F6;
+  letter-spacing: 0.10em;
+}
+
+/* line 27, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: #E9E581;
+  text-decoration: none;
+}
+
+/* line 32, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+.navbar-brand {
+  display: inline-block;
+  padding: 20px 19px 20px;
+  letter-spacing: 0.10em;
+  text-decoration: none;
+}
+
+/* line 39, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+.navbar-brand a {
+  color: #F6F6F6;
+}
+
+/* line 43, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+.navbar-brand a:hover {
+  color: #E9E581;
+  text-decoration: none;
+}
+
+/* line 48, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+.form-group {
+  display: inline-block;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* Footer */
+/* line 56, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+site-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+/* line 63, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+.footer-element {
+  display: inline-block;
+  float: right;
+  padding: 0 5px;
+}
+
+/* line 69, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+.bar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding-top: 15px;
+  width: 100%;
+  color: white;
+  background-color: #2B2B2B;
+}
+
+/* Carousel */
+/* line 81, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+.carousel {
+  padding-top: 20px;
+}
+
+/* line 85, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+.carousel-inner {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* line 90, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+.carousel-control.left, .carousel-control.right {
+  background-image: none;
+}
+
+/* line 94, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+.carousel-control:hover, .carousel-control:focus {
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  opacity: 100;
+}
+
+/* line 100, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+.carousel-control.left .glyphicon {
+  left: 0;
+  margin-left: 0;
+}
+
+/* line 105, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+.carousel-control.right .glyphicon {
+  right: 0;
+  margin-right: 0;
+}
+
+/* line 110, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+.carousel-caption {
+  background-color: rgba(233, 229, 129, 0.8);
+  border-radius: 10px;
+  font-size: 30px;
+  letter-spacing: 0.10em;
+  color: #2B2B2B;
+}
+
+/* line 118, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+.carousel-indicators > li {
+  border: 5px;
+  background-color: #a9a9a4;
+}
+
+/* line 123, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+.carousel-indicators > .active {
+  background-color: #2B2B2B;
+}
+
+/* Products Page */
+/* line 129, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+.card {
+  margin: 30px 15px 0;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 20px;
+  text-align: center;
+}
+
+/* line 137, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+.card_footer {
+  font-size: 2em;
+}
+
+/* line 141, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+#img_card {
+  margin-bottom: 4em;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* line 147, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+#product_card {
+  margin-top: 15em;
+  margin-left: 10em;
+  padding: 53px;
+  border-style: solid;
+  border-width: 4px;
+  width: 350px;
+  height: 300px;
+}
+
+/* Typography */
+/* line 159, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+.navbar a {
+  font-family: 'Raleway', sans-serif;
+}
+
+/* line 163, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+h1 {
+  font-family: 'Raleway', Helvetica, sans-serif;
+  text-align: center;
+}
+
+/* line 168, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+h2,
+h3,
+h4 {
+  font-family: 'Lora', serif;
+  text-align: center;
+}
+
+/* line 175, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+p {
+  font-family: 'Lora', serif;
+  display: block;
+  font-size: large;
+  text-align: center;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+

@@ -45,6 +45,12 @@ img {
     text-decoration: none;
 }
 
+.form-group {
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
 /* Footer */
 
 site-footer {
@@ -72,10 +78,13 @@ site-footer {
 
 /* Carousel */
 
+.carousel {
+	padding-top: 20px;
+}
+
 .carousel-inner {
 	background-color: white;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	margin-bottom: 0;
 }
 
 .carousel-control.left, .carousel-control.right {
