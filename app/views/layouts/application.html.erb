@@ -25,7 +25,7 @@
           <div class="projectName navbar-brand">
             <a href="#">First App</a>
           </div> <!-- /projectName -->
-          <div class="form-group">
+          <div class="search_bar">
             <%= form_with(url: products_path, method: "get", local: "true", class: "navbar-form navbar-right") do |form| %>
               <%= form.label :q, "Search for:" %>
               <%= form.text_field :q, id: "q", class: "form-control", value: params[:q] %>
