@@ -25,24 +25,35 @@
           <div class="projectName navbar-brand">
             <a href="#">First App</a>
           </div> <!-- /projectName -->
+        </div> <!-- /nav-header -->
+        <div class="collapse navbar-collapse">
+          <div class="navbar-form navbar-right">
+            <% if user_signed_in? %>
+              <%= link_to('Logout', destroy_user_session_path, method: :delete, class: "btn btn-default", id: "nav_btns") %>
+            <% else %>
+              <%= link_to('Login', new_user_session_path, class: "btn btn-default", id: "nav_btns") %>
+              <%= link_to('Register', new_user_registration_path, method: :get, class: "btn btn-default", id: "nav_btns") %>
+            <% end %>
+          </div> <!-- /navbar-form -->
           <div class="search_bar">
             <%= form_with(url: products_path, method: "get", local: "true", class: "navbar-form navbar-right") do |form| %>
-              <%= form.label :q, "Search for:" %>
-              <%= form.text_field :q, id: "q", class: "form-control", value: params[:q] %>
-              <%= form. submit "Search", class: "btn btn-default" %>
+              <%= form.text_field :q, id: "q", class: "form-control", value: params[:q], required: true %>
+              <%= form. submit "Search", class: "btn btn-default", id: "nav_btns", required: true%>
             <% end %>
-          </div>
-        </div> <!-- /navbar header -->
-        <div class="navbar-collapse collapse">
-  	      <ul class="nav navbar-nav navbar-right">
-  		      <li><%= link_to "Home", root_path %></li>
+          </div> <!-- /search_bar -->
+          <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to "Home", root_path %></li>
             <li><%= link_to "Products", products_path %></li>
-  		      <li><%= link_to "About", static_pages_about_path %></li>
-  		      <li><%= link_to "Contact", static_pages_contact_path %></li>
-  	      </ul>
-        </div> <!-- /navbar collapse -->
+            <li><%= link_to "About", static_pages_about_path %></li>
+            <li><%= link_to "Contact", static_pages_contact_path %></li>
+          </ul>
+        </div> <!-- /navbar-collapse -->
       </div> <!-- /container-fluid -->
     </nav> <!-- /navbar -->
+    <div class="container">
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+    </div> <!-- /container -->
 
     <%= yield %>
 
