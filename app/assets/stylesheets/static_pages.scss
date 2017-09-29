@@ -11,6 +11,10 @@ img {
 	margin: 7em auto;
 }
 
+.alert {
+	text-align: center;
+}
+
 /* Nav */
 
 .navbar {
@@ -154,6 +158,36 @@ site-footer {
 	height: 300px;
 }
 
+<<<<<<< Updated upstream
+=======
+/* Login */
+
+.checkbox input[type=checkbox] {
+	margin-left: 0;
+}
+
+.checkbox label {
+	padding-top: 11px;
+}
+
+#submit_btn {
+    display: block;
+	padding: 10px;
+	width: 100%;
+	background-color: #E9E581;
+	font-weight: 500;
+}
+
+#s_links {
+	display: block;
+	padding: 10px;
+}
+
+#cancel_btn {
+	width: 100%;
+}
+
+>>>>>>> Stashed changes
 /* Typography */
 
 .navbar a {
@@ -163,7 +197,7 @@ site-footer {
 h1 {
 	font-family: 'Raleway', Helvetica, sans-serif;
 	text-align: center;	
-	padding-top: 20px;
+	padding-top: 50px;
 }
 
 h2, 

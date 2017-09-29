@@ -32,6 +32,13 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+<<<<<<< Updated upstream
+=======
+
+# Added gems
+gem 'devise'
+gem 'cancancan', '~> 1.10'
+>>>>>>> Stashed changes
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
