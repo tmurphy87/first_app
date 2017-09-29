@@ -1,20 +1,30 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
   before_filter :authenticate_user!
   respond_to :json, :html
 >>>>>>> Stashed changes
+=======
+  respond_to :json, :html
+>>>>>>> master
 
   # GET /products
   # GET /products.json
   def index
     if params[:q]
       search_term = params[:q]
-      @products = Product.search(search_term)
+    if Rails.env.development?
+      @products = Product.where("name LIKE ?", "%#{search_term}%")
+    else
+      @products = Product.where("name ILIKE ?", "%#{search_term}%")
+    end
     else
       @products = Product.all
     end
+
+    respond_with @products
   end
 
   # GET /products/1

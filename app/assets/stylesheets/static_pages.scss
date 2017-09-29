@@ -23,9 +23,9 @@ img {
 }
 
 .navbar-inverse .navbar-nav>li>a {
-    color: #F6F6F6;
-    letter-spacing: 0.10em;
-
+	color: #F6F6F6;
+    letter-spacing: 0.15em;
+    padding-top: 20px;
 }
 
 .navbar-inverse .navbar-nav>li>a:hover {
@@ -51,8 +51,15 @@ img {
 
 .search_bar {
     display: inline-block;
-    padding-top: 10px;
     margin-bottom: 0;
+}
+
+#nav_btns {
+    padding: 8px 20px;
+    margin: 5px;
+	background-color: #F6F6F6;
+	color: #DE1B1B;
+	border-radius: 5px;
 }
 
 /* Footer */
@@ -158,8 +165,11 @@ site-footer {
 	height: 300px;
 }
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
+=======
+>>>>>>> master
 /* Login */
 
 .checkbox input[type=checkbox] {
@@ -183,14 +193,18 @@ site-footer {
 	padding: 10px;
 }
 
+<<<<<<< HEAD
 #cancel_btn {
 	width: 100%;
 }
 
 >>>>>>> Stashed changes
+=======
+>>>>>>> master
 /* Typography */
 
-.navbar a {
+.navbar a,
+a {
     font-family: 'Raleway', sans-serif;
 }
 
@@ -213,25 +227,3 @@ p {
 	font-size: large;
 	text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
