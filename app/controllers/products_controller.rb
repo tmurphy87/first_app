@@ -1,14 +1,7 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
   before_filter :authenticate_user!
   respond_to :json, :html
->>>>>>> Stashed changes
-=======
-  respond_to :json, :html
->>>>>>> master
 
   # GET /products
   # GET /products.json
