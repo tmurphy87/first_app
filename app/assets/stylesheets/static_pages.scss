@@ -11,6 +11,10 @@ img {
 	margin: 7em auto;
 }
 
+.alert {
+	text-align: center;
+}
+
 /* Nav */
 
 .navbar {
@@ -60,7 +64,7 @@ img {
 
 /* Footer */
 
-site-footer {
+.site-footer {
 	position: fixed;
 	left: 0;
 	bottom: 0;
@@ -184,6 +188,10 @@ site-footer {
 	padding: 10px;
 }
 
+#cancel_btn {
+	width: 100%;
+}
+
 /* Typography */
 
 .navbar a,
@@ -194,7 +202,7 @@ a {
 h1 {
 	font-family: 'Raleway', Helvetica, sans-serif;
 	text-align: center;	
-	padding-top: 20px;
+	padding-top: 50px;
 }
 
 h2, 
