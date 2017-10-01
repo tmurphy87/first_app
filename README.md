@@ -1,4 +1,5 @@
 # README
 
-I'm Tiffany Murphy, currently taking a web dev course through CF. This is my first app.
+My first Demo App for CareerFoundry Rails Course. 
+
 
