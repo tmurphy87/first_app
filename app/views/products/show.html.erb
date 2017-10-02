@@ -6,10 +6,12 @@
       <%= image_tag(@product.image_url, class: "img-responsive") %>
     </div>
     <div class="col-xs-12 col-sm-6" id="product_card">
-      <h1 class="product_title"><%= @product.name %></h1>
+      <h2 class="product_title"><%= @product.name %></h2>
+      <p><%= @product.highest_rating_comment %></p>
+      <p><%= @product.lowest_rating_comment %></p>
       <p><%= @product.colour %></p>
       <p><%= @product.description %></p>
-      <p><strong><%= @product.price %></strong></p>
+      <p><span class="glyphicon glyphicon-usd"></span><strong><%= number_with_precision(@product.price, precision: 2) %></strong></p>
     </div>
   </div>
 </div>
