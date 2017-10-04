@@ -1,0 +1,401 @@
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  font-size: 2em;
+}
+
+@font-face {
+  font-family: "raty";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/raty.eot");
+  src: url("fonts/raty.eot?#iefix") format("embedded-opentype");
+  src: url("fonts/raty.svg#raty") format("svg");
+  src: url("fonts/raty.ttf") format("truetype");
+  src: url("fonts/raty.woff") format("woff");
+}
+
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "raty";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+}
+
+.cancel-on-png:before {
+  content: "\e600";
+}
+
+.cancel-off-png:before {
+  content: "\e601";
+}
+
+.star-on-png:before {
+  content: "\f005";
+}
+
+.star-off-png:before {
+  content: "\f006";
+}
+
+.star-half-png:before {
+  content: "\f123";
+}
+/* line 5, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+body {
+  background-color: #F6F6F6;
+  margin: 75px;
+}
+
+/* line 10, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+img {
+  margin: 7em auto;
+}
+
+/* line 14, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+.alert {
+  text-align: center;
+}
+
+/* Nav */
+/* line 20, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+.navbar {
+  border-bottom: 10px solid #DE1B1B;
+  background-color: #2B2B2B;
+}
+
+/* line 25, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+.navbar-inverse .navbar-nav > li > a {
+  color: #F6F6F6;
+  letter-spacing: 0.15em;
+  padding-top: 20px;
+}
+
+/* line 31, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: #E9E581;
+  text-decoration: none;
+}
+
+/* line 36, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+.navbar-brand {
+  display: inline-block;
+  padding: 20px 19px 20px;
+  letter-spacing: 0.10em;
+  text-decoration: none;
+}
+
+/* line 43, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+.navbar-brand a {
+  color: #F6F6F6;
+}
+
+/* line 47, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+.navbar-brand a:hover {
+  color: #E9E581;
+  text-decoration: none;
+}
+
+/* line 52, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+.search_bar {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+/* line 57, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+#nav_btns {
+  padding: 8px 20px;
+  margin: 5px;
+  background-color: #F6F6F6;
+  color: #DE1B1B;
+  border-radius: 5px;
+}
+
+/* Footer */
+/* line 67, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+.site-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+/* line 74, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+.footer-element {
+  display: inline-block;
+  float: right;
+  padding: 0 5px;
+}
+
+/* line 80, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+.bar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding-top: 15px;
+  width: 100%;
+  color: white;
+  background-color: #2B2B2B;
+}
+
+/* Carousel */
+/* line 92, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+.carousel {
+  padding-top: 20px;
+}
+
+/* line 96, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+.carousel-inner {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* line 101, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+.carousel-control.left, .carousel-control.right {
+  background-image: none;
+}
+
+/* line 105, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+.carousel-control:hover, .carousel-control:focus {
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  opacity: 100;
+}
+
+/* line 111, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+.carousel-control.left .glyphicon {
+  left: 0;
+  margin-left: 0;
+}
+
+/* line 116, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+.carousel-control.right .glyphicon {
+  right: 0;
+  margin-right: 0;
+}
+
+/* line 121, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+.carousel-caption {
+  background-color: rgba(233, 229, 129, 0.8);
+  border-radius: 10px;
+  font-size: 30px;
+  letter-spacing: 0.10em;
+  color: #2B2B2B;
+}
+
+/* line 129, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+.carousel-indicators > li {
+  border: 5px;
+  background-color: #a9a9a4;
+}
+
+/* line 134, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+.carousel-indicators > .active {
+  background-color: #2B2B2B;
+}
+
+/* Products Page */
+/* line 140, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+.card {
+  margin: 30px 15px 0;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 20px;
+  text-align: center;
+}
+
+/* line 148, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+.card_footer {
+  font-size: 2em;
+}
+
+/* line 152, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+#img_card {
+  margin-top: 4em;
+  margin-bottom: 4em;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* line 159, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+.product_title {
+  margin-top: 3em;
+  margin-left: 1.6em;
+  text-align: left;
+}
+
+/* line 165, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+.price {
+  font-size: large;
+}
+
+/* line 169, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+#product_info {
+  margin-left: 4em;
+}
+
+/* line 173, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+#product_specs {
+  margin-left: 4em;
+  padding-top: 20px;
+}
+
+/* line 178, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+.rating {
+  display: inline-block;
+  font-size: 0px;
+  overflow: hidden;
+}
+
+/* line 184, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+.star-rating {
+  display: inline-block;
+  padding: 15px 0 15px 0;
+}
+
+/* line 189, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+.rated {
+  display: block;
+  font-size: 0px;
+  overflow: hidden;
+  padding: 15px 0 15px 0;
+}
+
+/* line 196, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+#new_comment {
+  margin-top: 4em;
+  margin-left: 1em;
+  padding: 30px;
+}
+
+/* line 202, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+hr {
+  border-top: 1px solid #e9e581;
+}
+
+/* line 206, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+.apple_pagination {
+  text-align: center;
+  padding: 1em;
+  cursor: default;
+}
+
+/* line 212, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+.apple_pagination a, .apple_pagination span {
+  padding: 0.3em 0.4em;
+}
+
+/* line 216, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+.apple_pagination .disabled {
+  color: #aaaaaa;
+}
+
+/* line 220, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+.apple_pagination .current {
+  display: inline-block;
+  width: 1.4em;
+  height: 1.4em;
+  line-height: 1.5;
+  font-style: normal;
+  font-weight: bold;
+  background-color: #bebebe;
+  border-radius: 1em;
+  text-shadow: rgba(255, 255, 255, 0.8) 1px 1px 1px;
+}
+
+/* line 232, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+.apple_pagination a {
+  text-decoration: none;
+  color: black;
+}
+
+/* line 237, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+.apple_pagination a:hover, .apple_pagination a:focus {
+  text-decoration: underline;
+}
+
+/* line 241, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+#p_nav_btn {
+  background-color: #2B2B2B;
+  color: #f1f1f1;
+  border-color: #bebebe;
+}
+
+/* Login */
+/* line 249, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+.checkbox input[type=checkbox] {
+  margin-left: 0;
+}
+
+/* line 253, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+.checkbox label {
+  padding-top: 11px;
+}
+
+/* line 257, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+#submit_btn {
+  display: block;
+  padding: 10px;
+  width: 100%;
+  background-color: #E9E581;
+  font-weight: 500;
+}
+
+/* line 265, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+#s_links {
+  display: block;
+  padding: 10px;
+}
+
+/* line 270, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+#cancel_btn {
+  width: 100%;
+}
+
+/* Typography */
+/* line 276, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+.navbar a,
+a {
+  font-family: 'Raleway', sans-serif;
+}
+
+/* line 281, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+h1 {
+  font-family: 'Raleway', Helvetica, sans-serif;
+  text-align: center;
+  padding-top: 50px;
+}
+
+/* line 287, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+h2,
+h3,
+h4 {
+  font-family: 'Lora', serif;
+  text-align: center;
+}
+
+/* line 294, /Users/mac/first_app/app/assets/stylesheets/static_pages.scss */
+p {
+  font-family: 'Lora', serif;
+  display: block;
+  font-size: medium;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
