@@ -203,6 +203,47 @@ hr {
 	border-top: 1px solid #e9e581;
 }
 
+.apple_pagination { 
+	text-align: center;
+	padding: 1em;
+	cursor: default;
+}
+
+.apple_pagination a, .apple_pagination span {
+	padding: 0.3em 0.4em;
+}
+
+.apple_pagination .disabled {
+	color: #aaaaaa;
+}
+
+.apple_pagination .current {
+    display: inline-block;
+    width: 1.4em;
+    height: 1.4em;
+    line-height: 1.5;
+	font-style: normal;
+	font-weight: bold;
+	background-color: #bebebe;
+	border-radius: 1em;
+	text-shadow: rgba(255, 255, 255, 0.8) 1px 1px 1px;
+}
+
+.apple_pagination a {
+	text-decoration: none;
+	color: black;
+}
+
+.apple_pagination a:hover, .apple_pagination a:focus {
+	text-decoration: underline;
+}
+
+#pg_nav_btn {
+	background-color: #2B2B2B;
+	color: #f1f1f1;
+	border-color: #bebebe;
+}
+
 /* Login */
 
 .checkbox input[type=checkbox] {
