@@ -1,0 +1,14 @@
+<% if signed_in? %>
+  <%= form_for([@product, @product.comments.build]) do |f| %>
+    <div class="form-group">
+      <%= f.label :body, "Add a Review:" %><br>
+      <%= f.text_area :body, class: "form-control", rows: "5" %>
+    </div>
+    <p>
+      <div class="rating"></div>
+    </p>
+    <p>
+      <%= f.submit "Submit", class:"btn btn-default", id: "submit_btn" %>
+    </p>
+  <% end %>
+<% end %>

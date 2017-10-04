@@ -1,19 +1,46 @@
 <p id="notice"><%= notice %></p>
 
-<div class="container-fluid" id="page_wrap">
+<div class="container-fluid" id="product_section">
   <div class="row">
-    <div class="col-xs-12 col-sm-6" id="img_card">
+    <div class="col-xs-12 col-md-6" id="img_card">
       <%= image_tag(@product.image_url, class: "img-responsive") %>
     </div>
-    <div class="col-xs-12 col-sm-6" id="product_card">
-      <h2 class="product_title"><%= @product.name %></h2>
-      <p><%= @product.colour %></p>
-      <p><%= @product.description %></p>
-      <p><span class="glyphicon glyphicon-usd"></span><strong><%= number_with_precision(@product.price, precision: 2) %></strong></p>
+    <div class="col-xs-12 col-md-6">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="product_title"><%= @product.name %></h2>
+          <div class="row">
+            <div class="col-md-12" id="product_info">
+              <div class="star-rating">Average Rating: <span class="rated" data-score="<%= @product.average_rating %>"></span></div>
+              <p class="price">Price: <span class="glyphicon glyphicon-usd"></span><strong><%= number_with_precision(@product.price, precision: 2) %></strong></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12" id="product_specs">
+              <p>Colour: <%= @product.colour %></p>
+              <p>Description: <%= @product.description %></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <%= render 'new_comment' %>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+  </div>
+  <div class="form-group row">
+    <div class="col-sm-12">
+      <%= render 'comments' %>
     </div>
   </div>
 </div>
 
-
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
+
+
+
+
+
