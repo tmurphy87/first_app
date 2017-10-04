@@ -7,8 +7,6 @@ class Comment < ApplicationRecord
   validates :product, presence: true
   validates :rating, numericality: { only_integer: true }
 
-  delegate :first_name, to: :user, allow_nil: true, prefix: true
-
   scope :rating_desc, -> { order(rating: :desc) }
   scope :rating_asc, -> { order(rating: :asc) }
 end
