@@ -2,7 +2,7 @@ class Product < ApplicationRecord
 	has_many :orders
 	has_many :comments
 
-	validates :name, :price, :image_url, :color, presence: true
+	validates :name, :price, :image_url, :colour, presence: true
 
 	def self.search(search_term)
 		Product.where("name ILIKE ?", "%#{search_term}%")
