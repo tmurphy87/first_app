@@ -1,5 +1,5 @@
 # README
 
-My first Demo App for CareerFoundry Rails Course. 
+My first Demo App for CareerFoundry Web Development Course. 
 
 
