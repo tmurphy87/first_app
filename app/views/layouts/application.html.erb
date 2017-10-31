@@ -6,6 +6,8 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <%= javascript_include_tag 'https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js' %>
+    <%= javascript_include_tag 'https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.js' %>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
@@ -31,7 +33,7 @@
             <% if user_signed_in? %>
               <%= link_to('Logout', destroy_user_session_path, method: :delete, class: "btn btn-default", id: "nav_btns") %>
             <% else %>
-              <%= link_to('Login', new_user_session_path, class: "btn btn-default", id: "nav_btns") %>
+              <%= link_to('Login', new_user_session_path, method: :get, class: "btn btn-default", id: "nav_btns") %>
               <%= link_to('Register', new_user_registration_path, method: :get, class: "btn btn-default", id: "nav_btns") %>
             <% end %>
           </div> <!-- /navbar-form -->
@@ -53,9 +55,9 @@
     
     <!-- Flash Notice Tags -->
     <% if notice %>
-      <p class="notice alert alert-info"><%= notice %></p>
+      <div class="alert alert-info"><%= notice %></div>
     <% elsif alert %>
-      <p class="alert alert-warning"><%= alert %></p>
+      <div class="alert alert-warning"><%= alert %></div>
     <% end %>
 
     <%= yield %>

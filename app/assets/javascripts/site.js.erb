@@ -17,4 +17,24 @@ $(document).on('turbolinks:load', function(){
           return $(this).attr('data-score');
         }
     });
+
+    $('#product').validate({
+        rules: {
+            name: "required",
+            description: "required",
+            image_url: "required",
+            colour: "required",
+            price: "required"
+        },
+        messages: {
+            name: "Please enter product name",
+            description: "Please enter a description",
+            image_url: "Please enter a image url",
+            colour: "Please enter a colour",
+            price: "Pleaes enter a number"
+        },
+        submitHandler: function(form) {
+            form.submit("Update");
+        }
+    });
 });
