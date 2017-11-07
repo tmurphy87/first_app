@@ -20,6 +20,11 @@
               <p>Colour: <%= @product.colour %></p>
               <p>Description: <%= @product.description %></p>
             </div>
+            <div class="col-md-12" id="stripe_bttn">
+              <%= form_with(url: '/payments/create') do |form| %>
+                <%= render partial: "shared/stripe_checkout_button" %>
+              <% end %>
+            </div>
           </div>
           <div class="row">
             <div class="col-md-12">
