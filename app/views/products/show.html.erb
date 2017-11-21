@@ -21,9 +21,11 @@
               <p>Description: <%= @product.description %></p>
             </div>
             <div class="col-md-12" id="stripe_bttn">
-              <%= form_with(url: '/payments/create') do |form| %>
-                <%= render partial: "shared/stripe_checkout_button" %>
-              <% end %>
+            <%= form_tag('/payments/create', remote: true) do %>
+              <%= render partial: "shared/stripe_checkout_button" %>
+                <%= hidden_field_tag(:product_id, @product.id) %>
+                <input type="hidden" value="<%= form_authenticity_token() %>"name="authenticity_token"/>
+            <% end %>
             </div>
           </div>
           <div class="row">

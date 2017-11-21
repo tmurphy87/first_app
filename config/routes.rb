@@ -5,7 +5,11 @@ Rails.application.routes.draw do
     resources :comments
   end
   resources :users
-  resources :orders, only: [:index, :show, :create, :destroy]
+  resources :orders, only: [:index, :show, :new, :create]
+
+  resources :payments, only: [:new, :create]
+
+  post 'payments/create'
 
   get 'static_pages/about'
 
