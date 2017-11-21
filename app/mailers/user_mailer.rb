@@ -14,10 +14,12 @@ class UserMailer < ApplicationMailer
 			subject: "Welcome to #{@appname}!")
 	end
 
-	def payment_received(order)
+	def payment_confirmation(user, product)
+		byebug
 		@user = user
 		@product = product
-		mail to: user.email, subject: "Thank you for your order."
+		mail(to: user.email, 
+			subject: "Payment confirmation")
 	end
 end
 

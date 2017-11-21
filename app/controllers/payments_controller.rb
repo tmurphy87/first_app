@@ -1,6 +1,7 @@
 class PaymentsController < ApplicationController
 
 	def create 
+		byebug
 		token = params[:stripeToken]
 		@product = Product.find(params[:product_id])
 		@user = current_user
@@ -14,7 +15,8 @@ class PaymentsController < ApplicationController
 				)
 			  if charge.paid
 			    Order.create(product_id: @product.id, user_id: @user.id, total: @product.price)
-			    UserMailer.payment_received(@user, @product).deliver_now
+			    UserMailer.payment_confirmation(@user, @product).deliver_now
+			    redirect_to product_path(@product), notice: "Thank you for your order"
 		    end
 
 		    flash[:success] = "Payment processed successfully"
@@ -26,6 +28,5 @@ class PaymentsController < ApplicationController
 			flash[:error] = "Unfortunately, there was an error processing your payment: #{err[:message]}"
 			redirect_to new_charge_path
 	  end
-	  redirect_to product_path(@product), notice: "Thank you for your order"
 	end
 end
