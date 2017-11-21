@@ -1,7 +1,7 @@
 class PaymentsController < ApplicationController
 
 	def create 
-		byebug
+		#byebug
 		token = params[:stripeToken]
 		@product = Product.find(params[:product_id])
 		@user = current_user

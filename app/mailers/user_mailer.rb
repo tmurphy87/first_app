@@ -15,7 +15,7 @@ class UserMailer < ApplicationMailer
 	end
 
 	def payment_confirmation(user, product)
-		byebug
+		#byebug
 		@user = user
 		@product = product
 		mail(to: user.email, 
