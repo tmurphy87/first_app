@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+<h1>My Orders</h1>
+  <div class="container-fluid" id="ordertable">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+      	<th>Product Image</th>
+      	<th>Product</th>
+        <th>Total ($)</th>
+      </tr>
+    </thead>
+    <tbody>
+    <% @orders.each do |order| %>
+      <tr>
+      	<td><%= image_tag(order.product.image_url, class: "img-responsive", size: "250x250") %></td>
+      	<td><%= order.product.name %></td>
+        <td>$<%= order.total %></td>
+      </tr>
+    <% end %>
+    </tbody>
+  </table>
+  <div class="apple_pagination">
+	  <%= will_paginate @orders %>
+  </div>
+  <%= link_to 'Back', products_path, class: "btn btn-primary btn-xs", id: "p_nav_btn" %>
+  <br>
+  <br>
+  <br>
+  </div>
+    
+
