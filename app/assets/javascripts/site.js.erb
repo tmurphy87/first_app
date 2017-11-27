@@ -1,42 +1,46 @@
-$(document).on('turbolinks:load', function(){
-	$(".alert, .notice").delay(3000).fadeOut(1000);
+var refreshRating = function(){
+  $('.rating').raty({
+    starHalf: '<%= asset_path 'star-half.png' %>',
+    starOff: '<%= asset_path 'star-off.png' %>',
+    starOn: '<%= asset_path 'star-on.png' %>',
+    scoreName: 'comment[rating]'
+  });
 
-    $('.rating').raty({
-    	starHalf: '<%= asset_path 'star-half.png' %>',
-    	starOff: '<%= asset_path 'star-off.png' %>',
-    	starOn: '<%= asset_path 'star-on.png' %>',
-    	scoreName: 'comment[rating]'
-    });
+  $('.rated').raty({
+    starHalf: '<%= asset_path 'star-half.png' %>',
+    starOff: '<%= asset_path 'star-off.png' %>',
+    starOn: '<%= asset_path 'star-on.png' %>',
+    readOnly: true,
+    score: function() {
+      return $(this).attr('data-score');
+    }
+  });
+};
 
-    $('.rated').raty({
-        starHalf: '<%= asset_path 'star-half.png' %>',
-        starOff: '<%= asset_path 'star-off.png' %>',
-        starOn: '<%= asset_path 'star-on.png' %>',
-        readOnly: true,
-        score: function() {
-          return $(this).attr('data-score');
-        }
-    });
+$(document).on('turbolinks:load ajaxSuccess', function(){
+  refreshRating();
 
-    $('.img-zoom').elevateZoom();
+	$(".alert, .notice").delay(2000).fadeOut(1000);
 
-    $('#product').validate({
-        rules: {
-            name: "required",
-            description: "required",
-            image_url: "required",
-            colour: "required",
-            price: "required"
-        },
-        messages: {
-            name: "Please enter product name",
-            description: "Please enter a description",
-            image_url: "Please enter a image url",
-            colour: "Please enter a colour",
-            price: "Pleaes enter a number"
-        },
-        submitHandler: function(form) {
-            form.submit("Update");
-        }
-    });
+  $('.img-zoom').elevateZoom();
+
+  $('#product').validate({
+    rules: {
+        name: "required",
+        description: "required",
+        image_url: "required",
+        colour: "required",
+        price: "required"
+    },
+    messages: {
+        name: "Please enter product name",
+        description: "Please enter a description",
+        image_url: "Please enter a image url",
+        colour: "Please enter a colour",
+        price: "Pleaes enter a number"
+    },
+    submitHandler: function(form) {
+        form.submit("Update");
+    }
+  });
 });
