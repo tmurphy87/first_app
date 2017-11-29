@@ -17,15 +17,15 @@ var refreshRating = function() {
   });
 };
 
-$(document).on('turbolinks:load ajaxSuccess', function() {
+$(document).on('turbolinks:load', function() {
 
 	$(".alert, .notice").delay(2000).fadeOut(1000);
 
   refreshRating();
 
   $('.img-zoom').elevateZoom({
-    zoomWindowWidth:300,
-    zoomWindowHeight:150
+    zoomWindowWidth:350,
+    zoomWindowHeight:200
   });
 
   $('#product').validate({
