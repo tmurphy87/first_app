@@ -1,4 +1,4 @@
-var refreshRating = function(){
+var refreshRating = function() {
   $('.rating').raty({
     starHalf: '<%= asset_path 'star-half.png' %>',
     starOff: '<%= asset_path 'star-off.png' %>',
@@ -17,12 +17,16 @@ var refreshRating = function(){
   });
 };
 
-$(document).on('turbolinks:load ajaxSuccess', function(){
-  refreshRating();
+$(document).on('turbolinks:load ajaxSuccess', function() {
 
 	$(".alert, .notice").delay(2000).fadeOut(1000);
 
-  $('.img-zoom').elevateZoom();
+  refreshRating();
+
+  $('.img-zoom').elevateZoom({
+    zoomWindowWidth:350,
+    zoomWindowHeight:200
+  });
 
   $('#product').validate({
     rules: {
