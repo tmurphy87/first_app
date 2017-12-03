@@ -4,7 +4,9 @@
 
 <div class="container" id=products>
   <div class="row">
-    <%= render @products %>
+  	<% cache(cache_key_for_products) do %>
+      <%= render @products %>
+    <% end %>
   </div> <!-- /row -->
   <!-- added whitespace above new product link -->
   <br>
