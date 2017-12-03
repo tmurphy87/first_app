@@ -2,7 +2,7 @@
 <%= link_to product do %>
   <div class="col-xs-12 col-sm-6 col-lg-4">
     <div class="card">
-      <% cache product do %>
+      <% cache product do %> <!--cache products-->
         <%= link_to image_tag(product.image_url, class: "img-responsive"), product %>
         <div class="card_block">
           <h3 class="card_title"><%= product.name %></h3>
