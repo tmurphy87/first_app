@@ -9,6 +9,8 @@ Rails.application.routes.draw do
 
   resources :payments, only: [:new, :create]
 
+  mount ActionCable.server => '/cable'
+
   post 'payments/create'
 
   get 'static_pages/about'

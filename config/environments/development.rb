@@ -46,6 +46,9 @@ Rails.application.configure do
 
   # Suppress logger output for asset requests.
   config.assets.quiet = true
+  
+  #Change generator to create JavaSript instead of CoffeeScript
+  config.app_generators.javascript_engine = :javascript
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true

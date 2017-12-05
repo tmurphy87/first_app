@@ -32,9 +32,10 @@
             <% end %>
             </div>
           </div>
+          <!--cache for comments-->
           <div class="row">
             <div class="col-md-12">
-              <%= render 'new_comment' %>
+                <%= render 'new_comment' %>
             </div>
           </div>
         </div>
@@ -43,12 +44,11 @@
   </div>
   <div class="form-group row">
     <div class="col-sm-12">
-      <% cache @comments do %> <!--cache for comments-->
-        <%= render 'comments' %>
-        <div class="apple_pagination">
-          <%= will_paginate @comments %>
-        </div>
-      <% end %>
+      <div class="col-offset-md-4 alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
+      <%= render 'comments' %>
+      <div class="apple_pagination">
+        <%= will_paginate @comments %> 
+      </div>
     </div>
   </div>
   <%= link_to 'Edit', edit_product_path(@product), class: "btn btn-primary btn-xs", id: "p_nav_btn" %> |
