@@ -23,4 +23,12 @@ class Product < ApplicationRecord
 	def average_rating
 		comments.average(:rating).to_f
 	end
+
+	def views
+		$redis.get("product:#{id}") #Equal to 'GET product:1'
+	end
+
+	def viewed!
+		$redis.incr("product:#{id}") #Equal to 'INC product:1'
+	end
 end

@@ -41,6 +41,8 @@ gem 'rails-controller-testing'
 gem 'stripe'
 gem 'brakeman', :require => false
 gem 'dalli'
+gem 'redis-rails'
+gem 'newrelic_rpm'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

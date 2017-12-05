@@ -1,5 +1,4 @@
 <p id="notice"><%= notice %></p>
-<% cache @product do %>
 <div class="container" id="product_section">
   <div class="row">
     <div class="col-xs-12 col-md-6" id="img_card">
@@ -19,6 +18,11 @@
             <div class="col-md-12" id="product_specs">
               <p>Colour: <%= @product.colour %></p>
               <p>Description: <%= @product.description %></p>
+              <h6>Views:
+                <span class="badge">
+                  <%= @product.views %>
+                </span>
+              </h6>
             </div>
             <div class="col-md-12" id="stripe_bttn">
             <%= form_tag('/payments/create', remote: true) do %>
@@ -50,7 +54,6 @@
   <%= link_to 'Edit', edit_product_path(@product), class: "btn btn-primary btn-xs", id: "p_nav_btn" %> |
   <%= link_to 'Back', products_path, class: "btn btn-primary btn-xs", id: "p_nav_btn" %>
 </div>
-<% end %>
 <!-- Added a little white space between footer and links -->
 <br>
 <br>
