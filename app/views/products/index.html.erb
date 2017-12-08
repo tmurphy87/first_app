@@ -1,5 +1,3 @@
-<p id="notice"><%= notice %></p>
-
 <h1 class="product-page-title">Products</h1>
 
 <div class="container" id=products>
@@ -11,7 +9,9 @@
   <!-- added whitespace above new product link -->
   <br>
   <br>
+  <% if current_user && current_user.admin? %>
   <%= link_to 'New Product', new_product_path, class: "btn btn-primary btn-xs", id: "p_nav_btn" %>
+  <% end %>
 </div> <!-- /container -->
 <!-- added whitespace above footer -->
 <br>

@@ -14,7 +14,7 @@
       <tr>
       	<td><%= image_tag(order.product.image_url, class: "img-responsive", size: "250x250") %></td>
       	<td><%= order.product.name %></td>
-        <td>$<%= order.total %></td>
+        <td>$<%= order.total.to_i %></td>
       </tr>
     <% end %>
     </tbody>

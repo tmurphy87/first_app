@@ -1,3 +1,108 @@
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* Products Page */
+
+.card {
+    margin: 25px 5px 0;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	padding: 30px;
+	text-align: center;
+}
+
+.card_footer {
+	font-size: 2em;
+}
+
+#img_card {
+    margin-top: 6em;
+    padding: 0 0 60px;
+    background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.product_title {
+	margin-top: 3em;
+	text-align: left;
+}
+
+.price {
+	font-size: large;
+}
+
+#product_info {
+	text-align: left;
+}
+
+#product_specs {
+	padding-top: 10px;
+}
+
+.rating {
+	display: inline-block;
+	font-size: 0px;
+	overflow: hidden;
+}
+
+.star-rating {
+    display: inline-block;
+	padding: 15px 0;
+}
+
+.rated {
+    display: block;
+	font-size: 0px;
+	overflow: hidden;
+	padding: 15px 0 15px 0;
+}
+
+#new_comment {
+	padding: 20px 0;
+}
+
+hr {
+	border-top: 1px solid #e9e581;
+}
+
+.apple_pagination { 
+	text-align: center;
+	padding: 1em;
+	cursor: default;
+}
+
+.apple_pagination a, .apple_pagination span {
+	padding: 0.3em 0.4em;
+}
+
+.apple_pagination .disabled {
+	color: #aaaaaa;
+}
+
+.apple_pagination .current {
+    display: inline-block;
+    width: 1.4em;
+    height: 1.4em;
+    line-height: 1.5;
+	font-style: normal;
+	font-weight: bold;
+	background-color: #bebebe;
+	border-radius: 1em;
+	text-shadow: rgba(255, 255, 255, 0.8) 1px 1px 1px;
+}
+
+.apple_pagination a {
+	text-decoration: none;
+	color: black;
+}
+
+.apple_pagination a:hover, .apple_pagination a:focus {
+	text-decoration: underline;
+}
+
+#p_nav_btn {
+	background-color: #2B2B2B;
+	color: #f1f1f1;
+	border-color: #bebebe;
+}

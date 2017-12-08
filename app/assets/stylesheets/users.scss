@@ -1,3 +1,30 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* Login */
+
+.checkbox input[type=checkbox] {
+	margin-left: 0;
+}
+
+.checkbox label {
+	padding-top: 11px;
+}
+
+#submit_btn {
+    display: block;
+	padding: 10px;
+	width: 100%;
+	background-color: #E9E581;
+	font-weight: 500;
+}
+
+#s_links {
+	display: block;
+	padding: 10px;
+}
+
+#cancel_btn {
+	width: 100%;
+}
