@@ -5,8 +5,7 @@ describe Comment do
 		product = FactoryBot.create(:product)
 		user = FactoryBot.create(:user)
 	end
-
-
+	
 	context "Testing validations" do
 
 		it "is not valid without a rating" do
