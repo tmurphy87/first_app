@@ -26,10 +26,14 @@
               </h6>
             </div>
             <div class="col-md-12" id="stripe_bttn">
-            <%= form_tag('/payments/create', remote: true) do %>
-              <%= render partial: "shared/stripe_checkout_button" %>
-                <%= hidden_field_tag(:product_id, @product.id) %>
-                <input type="hidden" value="<%= form_authenticity_token() %>"name="authenticity_token"/> <!-- added to fix "Can't verify CSRF token authenticity" error when testing payments -->
+            <% if signed_in? %>
+              <%= form_tag('/payments/create', remote: true) do %>
+                <%= render partial: "shared/stripe_checkout_button" %>
+                  <%= hidden_field_tag(:product_id, @product.id) %>
+                  <input type="hidden" value="<%= form_authenticity_token() %>"name="authenticity_token"/> <!-- added to fix "Can't verify CSRF token authenticity" error when testing payments -->
+              <% end %>
+            <% else %>
+              <%=link_to "Pay with Card", new_user_session_path, class: 'btn btn-default', id: 'pay_btn'%>
             <% end %>
             </div>
           </div>

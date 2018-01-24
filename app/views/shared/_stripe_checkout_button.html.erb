@@ -4,5 +4,6 @@
   data-image="<%= image_path(@product.image_url) %>"
   data-name="<%= @product.name %>"
   data-description="<%= @product.description %>"
+  data-email="<%= current_user.email %>"
   data-amount="<%= @product.price * 100 %>">
 </script>
