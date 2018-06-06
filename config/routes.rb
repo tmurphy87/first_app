@@ -8,6 +8,10 @@ Rails.application.routes.draw do
   resources :orders, only: [:index, :show, :new, :create]
 
   resources :payments, only: [:new, :create]
+  
+  #resources for sitemap
+  resources :sitemaps, :only => :index
+
 
   mount ActionCable.server => '/cable'
 
@@ -21,6 +25,9 @@ Rails.application.routes.draw do
   get 'static_pages/index'
 
   get 'index', to: 'orders#index'
+
+  #add route for sitemap
+  get 'sitemap.xml' => 'sitemaps#index', :format => 'xml', :as => :sitemap
 
   root 'static_pages#landing_page'
 
